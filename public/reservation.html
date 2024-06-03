@@ -22,10 +22,10 @@
         <!-- navbar start -->
         <nav>
             <div class="w-80 lg:w-280 my-0 mx-auto flex justify-between">
-                <button class="flex my-[26px]">
+                <a href="index.html" class="flex my-[26px]">
                     <h4 class="mt-1 font-black text-lg lg:text-2xl">F<span class="text-primary">oo</span>d
                         Tuck</h4>
-                </button>
+                </a>
                 <div class="hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-x-3">
                     <ul class="font-medium text-gray-500 text-lg flex flex-row gap-14">
                         <li class="cursor-pointer hover:text-primary"><a href="index.html">Home</a></li>
@@ -37,11 +37,50 @@
             </div>
         </nav>
         <!-- navbar end -->
-        <!-- reservation start  -->
-
-        <!-- reservation end -->
     </header>
     <!-- header section end -->
+    <!-- reservation start  -->
+    <main class=" w-80 lg:w-280 mx-auto my-10 border-2 border-primary rounded-lg">
+        <div class="mt-10 mb-5 text-center text-4xl font-bold">Make a Reservation</div>
+        <form class="p-8" validate>
+            <div class="flex gap-4">
+                <input type="text" name="name"
+                    class="mt-1 block w-1/2 rounded-md border border-primary bg-white px-3 py-4 text-primary font-semibold shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm"
+                    placeholder="Full Name *" />
+                <input type="email" name="email"
+                    class="mt-1 block w-1/2 rounded-md border border-primary bg-white px-3 py-4 text-primary font-semibold shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm"
+                    placeholder="Email *" />
+            </div>
+            <div class="my-6 flex gap-4">
+                <select name="select" id="select"
+                    class="block w-1/2 rounded-md border border-primary bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm">
+                    <option class="font-semibold text-primary" selected disabled>Please Select the Table</option>
+                    <option class="font-semibold text-primary">For 2 People</option>
+                    <option class="font-semibold text-primary">For 4 People</option>
+                    <option class="font-semibold text-primary">For 8 People</option>
+                </select>
+                <select name="select" id="select"
+                    class="block w-1/2 rounded-md border border-primary bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm">
+                    <option class="font-semibold text-primary" selected disabled>Please Select Time</option>
+                    <option class="font-semibold text-primary">4:00 Available</option>
+                    <option class="font-semibold text-primary">4:00 Available</option>
+                    <option class="font-semibold text-primary">4:00 Available</option>
+                </select>
+            </div>
+            <div class="">
+                <textarea name="textarea" id="text" cols="30" rows="10"
+                    class="mb-10 h-40 w-full resize-none rounded-md border border-primary p-5 font-semibold text-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
+                    placeholder="Message"></textarea>
+            </div>
+            <div class="text-center">
+                <a
+                    class="cursor-pointer rounded-lg bg-primary px-8 py-5 text-base font-semibold text-white hover:text-primary hover:bg-white hover:border-primary hover:outline">Book
+                    Reservation</a>
+            </div>
+        </form>
+    </main>
+    <!-- reservation end -->
+
     <!-- footer section start -->
     <footer class="w-93.75 lg:w-full my-0 mx-auto bg-primarylite text-[#333333]">
         <div

@@ -22,10 +22,10 @@
         <!-- navbar start -->
         <nav>
             <div class="w-80 lg:w-280 my-0 mx-auto flex justify-between">
-                <button class="flex my-[26px]">
+                <a href="index.html" class="flex my-[26px]">
                     <h4 class="mt-1 font-black text-lg lg:text-2xl">F<span class="text-primary">oo</span>d
                         Tuck</h4>
-                </button>
+                </a>
                 <div class="hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-x-3">
                     <ul class="font-medium text-gray-500 text-lg flex flex-row gap-14">
                         <li class="cursor-pointer hover:text-primary"><a href="index.html">Home</a></li>
@@ -37,11 +37,45 @@
             </div>
         </nav>
         <!-- navbar end -->
-        <!-- contact start  -->
-
-        <!-- contact end -->
     </header>
     <!-- header section end -->
+    <!-- contact start  -->
+    <main class=" w-80 lg:w-180 mx-auto my-10 border-2 border-primary rounded-lg">
+        <div class="mt-10 mb-5 text-center text-4xl font-bold">Contact Us</div>
+        <form class="p-8" validate>
+            <div class="flex">
+                <input type="text" name="name"
+                    class="mt-1 block w-full rounded-md border border-primary bg-white px-3 py-4 text-primary font-semibold shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm"
+                    placeholder="Full Name *" />
+            </div>
+            <div class="flex mt-1 gap-4">
+                <input type="email" name="email"
+                    class="mt-1 block w-full rounded-md border border-primary bg-white px-3 py-4 text-primary font-semibold shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm"
+                    placeholder="Email *" />
+                <input type="tel" name="phone"
+                    class="mt-1 block w-full rounded-md border border-primary bg-white px-3 py-4 text-primary font-semibold shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm"
+                    placeholder="Phone *" />
+            </div>
+
+            <div class="my-6">
+                <textarea name="textarea" id="text" cols="30" rows="10"
+                    class="mb-10 h-40 w-full resize-none rounded-md border border-primary p-5 font-semibold text-primary focus:border-primary focus:ring-primary focus:ring-1 focus:outline-none"
+                    placeholder="Message"></textarea>
+            </div>
+            <div class="text-center">
+                <a
+                    class="cursor-pointer rounded-lg bg-primary px-8 py-5 text-base font-semibold text-white hover:text-primary hover:bg-white hover:border-primary hover:outline">Submit</a>
+            </div>
+        </form>
+    </main>
+    <!-- contact end -->
+    <!-- GOOGLE MAP AREA START -->
+    <div class="google-map mb-120">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28943.375053605247!2d91.968339!3d24.934731!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750552bc71c899d%3A0x804e438bcc32b390!2sMetropolitan%20University%20Sylhet!5e0!3m2!1sen!2sus!4v1708006722765!5m2!1sen!2sus"
+            width="100%" height="450" frameborder="0" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- GOOGLE MAP AREA END -->
     <!-- footer section start -->
     <footer class="w-93.75 lg:w-full my-0 mx-auto bg-primarylite text-[#333333]">
         <div
